@@ -1,5 +1,4 @@
-Yuelyu.io
-================================================================================
+
 
 
 ```
@@ -11,8 +10,7 @@ Built using:
 [jQuery](https://jquery.com/) for JS  
 [namecheap](https://www.namecheap.com/) for the awesome domain  
 [GitHub Pages](https://pages.github.com/) for hosting  
-[CloudFlare](https://www.cloudflare.com/) for the SSL cert and fancy green lock :lock:  
-[git](https://git-scm.com/) for source control
+
 
 
 
