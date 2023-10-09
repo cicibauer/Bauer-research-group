@@ -1052,6 +1052,62 @@ color:#000;
 .project_main_1{ 
 padding-top:30px;
  }
+ 
+#project.theme-tile {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.theme-image {
+    width: 100%;
+    height: auto;
+    transition: transform .5s ease;
+    z-index: 0; /* below the overlay */
+}
+
+.theme-tile:hover .theme-image {
+    transform: scale(1.1);
+}
+
+
+.theme-tile::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.6); /* This adds a semi-transparent white overlay. Adjust the 0.7 value to increase or decrease the fade. */
+    z-index: 1; /* Ensure the overlay is below the text */
+}
+
+
+.theme-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    text-align: center;
+    width: 95%; /* Adjust this value as needed */
+    background: rgba(0, 0, 0, 0); /* This adds a semi-transparent gray overlay */
+    padding: 30px;
+    border-radius: 20px;
+    z-index: 2; /* Ensure the text is above the overlay and image */
+}
+
+.theme-text h3, .theme-text p {
+    font-weight: bold; /* Makes the text bolder */
+    color: "#808080"; /* Grayer color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adds a shadow effect */
+}
+/* Add padding to the inner content of each column */
+.col-sm-6 .event_2 {
+    padding: 0 15px; /* Adjust the 15px value as needed */
+}
+
+
 /********************* project_end ****************/
 /********************* footer ****************/
 #footer{ 
@@ -3231,3 +3287,6 @@ padding: 8px 8px 8px 8px;
  padding-top: 10px;
 }
 }
+
+
+
